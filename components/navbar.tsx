@@ -48,12 +48,14 @@ export function Navbar() {
     <>
       <header
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-          isScrolled ? "bg-background/95 backdrop-blur-md shadow-sm py-3" : "bg-transparent py-4",
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+          isScrolled 
+            ? "bg-background shadow-md py-4" 
+            : "bg-background/80 backdrop-blur-sm py-5 border-b border-primary/5"
         )}
       >
         <nav className="container mx-auto px-6 flex items-center justify-between">
-          <Link href="/" className="relative h-12 w-36 z-50">
+          <Link href="/" className="relative h-10 w-32 z-50">
             <Image
               src="/images/logo.png"
               alt="Wigmart - Where savings meet style"
@@ -64,28 +66,22 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex items-center gap-10">
+          <ul className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
                   className={cn(
-                    "text-sm tracking-wide uppercase transition-all duration-300 font-medium",
+                    "text-sm tracking-wide uppercase transition-all duration-300 font-medium relative",
                     isActive(link.href)
-                      ? "text-accent"
-                      : isScrolled
-                        ? "text-primary hover:text-accent"
-                        : "text-white hover:text-accent",
+                      ? "text-accent font-semibold"
+                      : "text-primary hover:text-accent"
                   )}
-                  style={
-                    isActive(link.href)
-                      ? {
-                          textShadow: "0 0 30px rgba(255, 200, 87, 0.3)",
-                        }
-                      : undefined
-                  }
                 >
                   {link.label}
+                  {isActive(link.href) && (
+                    <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent rounded-full" />
+                  )}
                 </Link>
               </li>
             ))}
@@ -94,7 +90,7 @@ export function Navbar() {
           {/* Contact Button - Desktop */}
           <Link
             href="/contact"
-            className="hidden md:inline-flex items-center px-6 py-2.5 text-sm tracking-wider uppercase bg-accent text-accent-foreground hover:bg-accent/90 transition-colors duration-300 rounded-sm font-medium"
+            className="hidden md:inline-flex items-center px-6 py-2.5 text-sm tracking-wider uppercase bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 rounded-lg font-semibold shadow-lg hover:shadow-xl"
           >
             Get in Touch
           </Link>
@@ -102,10 +98,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={cn(
-              "md:hidden p-2 transition-colors duration-300 z-50 relative",
-              isScrolled ? "text-primary" : "text-white",
-            )}
+            className="md:hidden p-2 text-primary hover:text-accent transition-colors duration-300 z-50 relative"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -158,7 +151,7 @@ export function Navbar() {
             <Link
               href="/contact"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block w-full py-3 px-4 text-center text-sm tracking-wider uppercase bg-accent text-accent-foreground rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+              className="block w-full py-3 px-4 text-center text-sm tracking-wider uppercase bg-accent text-accent-foreground rounded-lg font-semibold hover:bg-accent/90 transition-colors shadow-lg"
             >
               Get in Touch
             </Link>
@@ -174,7 +167,7 @@ export function Navbar() {
             </div>
             <div className="flex items-center gap-3 text-sm text-primary/70">
               <Mail size={18} className="text-accent" />
-              <a href="mailto:info@wigmart.co.ke" className="hover:text-accent transition-colors">
+              <a href="mailto:info@wigomart.com" className="hover:text-accent transition-colors">
                 info@wigomart.com
               </a>
             </div>
@@ -182,9 +175,7 @@ export function Navbar() {
 
           {/* Footer Text */}
           <div className="mt-6 text-center">
-            <p className="text-xs text-primary/50 tracking-wide">
-              Where Savings Meet Style
-            </p>
+            <p className="text-xs text-primary/50 tracking-wide">Where Savings Meet Style</p>
           </div>
         </div>
       </aside>

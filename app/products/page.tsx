@@ -13,13 +13,17 @@ export default function ProductsPage() {
       <Navbar />
       {/* Header */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-secondary">
-        <div className="container mx-auto px-6 text-center">
-          <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Browse</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-foreground">Our Collection</h1>
-          <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-            Each piece is thoughtfully selected for its exceptional craftsmanship, quality materials, and timeless
-            design.
-          </p>
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <span className="text-sm tracking-widest uppercase text-accent font-semibold">Browse</span>
+            <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-foreground text-balance">
+              Our Collection
+            </h1>
+            <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Each piece is thoughtfully selected for its exceptional craftsmanship, quality materials, and timeless
+              design.
+            </p>
+          </div>
         </div>
       </section>
       <ProductsGrid />
