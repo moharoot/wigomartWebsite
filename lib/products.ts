@@ -1,0 +1,231 @@
+export interface Product {
+  id: string
+  name: string
+  description: string
+  shortDescription: string
+  price: string
+  category: string
+  image: string
+  features: string[]
+}
+
+export const products: Product[] = [
+  // Wooden Beds
+  {
+    id: "classic-wooden-bed-king",
+    name: "Classic Mahogany King Bed",
+    description:
+      "A stunning king-size bed crafted from premium Kenyan mahogany. Features intricate headboard carvings and solid wood construction that will last generations. The rich, warm tones of natural mahogany bring elegance to any bedroom.",
+    shortDescription: "Premium mahogany king-size bed",
+    price: "KES 85,000",
+    category: "Wooden Beds",
+    image: "/classic-mahogany-wooden-bed-king-size-bedroom-furn.jpg",
+    features: ["Solid Mahogany", "King Size", "Hand-carved Headboard", "Natural Finish"],
+  },
+  {
+    id: "modern-oak-bed-queen",
+    name: "Modern Oak Queen Bed",
+    description:
+      "Contemporary design meets traditional craftsmanship in this beautiful queen-size oak bed. Clean lines and minimalist styling make it perfect for modern Kenyan homes. Built with sustainably sourced oak for durability and beauty.",
+    shortDescription: "Contemporary oak queen bed",
+    price: "KES 68,000",
+    category: "Wooden Beds",
+    image: "/modern-oak-wooden-bed-queen-size-minimalist-bedroo.jpg",
+    features: ["Solid Oak", "Queen Size", "Minimalist Design", "Slatted Base"],
+  },
+  // MDF Beds
+  {
+    id: "mdf-storage-bed-king",
+    name: "Premium MDF Storage Bed",
+    description:
+      "Smart storage solution with built-in drawers and hydraulic lift mechanism. High-quality MDF with premium laminate finish that's easy to clean and maintain. Perfect for maximizing space in urban Nairobi apartments.",
+    shortDescription: "MDF bed with built-in storage",
+    price: "KES 45,000",
+    category: "MDF Beds",
+    image: "/modern-mdf-storage-bed-with-drawers-white-bedroom-.jpg",
+    features: ["Premium MDF", "King Size", "Built-in Storage", "Hydraulic Lift"],
+  },
+  {
+    id: "mdf-platform-bed-queen",
+    name: "Sleek MDF Platform Bed",
+    description:
+      "Ultra-modern platform bed with floating design effect. Upholstered headboard panel adds comfort and luxury. Engineered MDF core ensures stability and longevity with a contemporary aesthetic.",
+    shortDescription: "Modern MDF platform bed",
+    price: "KES 38,000",
+    category: "MDF Beds",
+    image: "/sleek-mdf-platform-bed-floating-design-modern-grey.jpg",
+    features: ["Engineered MDF", "Queen Size", "Upholstered Headboard", "Floating Design"],
+  },
+  // Console Tables
+  {
+    id: "entryway-console-table",
+    name: "Elegant Entryway Console",
+    description:
+      "Make a stunning first impression with this elegant console table. Features a marble top and gold-finished metal frame. Perfect for hallways, entryways, or living rooms in Kenyan homes.",
+    shortDescription: "Marble top console table",
+    price: "KES 32,000",
+    category: "Console Tables",
+    image: "/elegant-marble-top-console-table-gold-frame-entryw.jpg",
+    features: ["Marble Top", "Gold Frame", "120cm Width", "Elegant Design"],
+  },
+  {
+    id: "rustic-wood-console",
+    name: "Rustic Wooden Console",
+    description:
+      "Handcrafted from reclaimed wood with natural distressed finish. Each piece is unique with its own character and grain pattern. Adds warmth and character to any space.",
+    shortDescription: "Reclaimed wood console",
+    price: "KES 28,000",
+    category: "Console Tables",
+    image: "/rustic-reclaimed-wood-console-table-natural-finish.jpg",
+    features: ["Reclaimed Wood", "Natural Finish", "Handcrafted", "Unique Grain"],
+  },
+  // Dining Tables
+  {
+    id: "dining-table-8-seater",
+    name: "Grand 8-Seater Dining Table",
+    description:
+      "Bring the family together around this magnificent 8-seater dining table. Crafted from solid wood with a stunning natural grain. Perfect for large Kenyan families who value shared meals and togetherness.",
+    shortDescription: "Solid wood 8-seater dining",
+    price: "KES 95,000",
+    category: "Dining",
+    image: "/large-8-seater-wooden-dining-table-family-gatherin.jpg",
+    features: ["Solid Wood", "8 Seater", "Natural Grain", "240cm Length"],
+  },
+  {
+    id: "dining-table-6-seater",
+    name: "Modern 6-Seater Dining Set",
+    description:
+      "Contemporary dining set perfect for medium-sized families. Includes table and 6 upholstered chairs. The sleek design complements modern Kenyan homes while providing comfortable dining.",
+    shortDescription: "6-seater dining with chairs",
+    price: "KES 72,000",
+    category: "Dining",
+    image: "/modern-6-seater-dining-table-set-with-chairs.jpg",
+    features: ["Table + 6 Chairs", "180cm Length", "Upholstered Seats", "Modern Design"],
+  },
+  {
+    id: "dining-table-4-seater",
+    name: "Compact 4-Seater Dining",
+    description:
+      "Perfect for small families or apartments. This 4-seater dining table doesn't compromise on style despite its compact size. Ideal for Nairobi's modern apartments.",
+    shortDescription: "Space-saving 4-seater dining",
+    price: "KES 48,000",
+    category: "Dining",
+    image: "/compact-4-seater-dining-table-small-apartment-mode.jpg",
+    features: ["4 Seater", "120cm Length", "Space-Saving", "Apartment Friendly"],
+  },
+  // Coffee Tables
+  {
+    id: "glass-coffee-table",
+    name: "Contemporary Glass Coffee Table",
+    description:
+      "Elevate your living room with this stunning glass-top coffee table. Tempered safety glass on a sculptural metal base creates an airy, modern look perfect for contemporary Kenyan interiors.",
+    shortDescription: "Tempered glass coffee table",
+    price: "KES 24,000",
+    category: "Coffee Tables",
+    image: "/modern-glass-top-coffee-table-metal-base-living-ro.jpg",
+    features: ["Tempered Glass", "Metal Base", "120cm x 60cm", "Modern Design"],
+  },
+  {
+    id: "wooden-coffee-table",
+    name: "Solid Wood Coffee Table",
+    description:
+      "Classic wooden coffee table with lower shelf for storage. Made from kiln-dried hardwood with a rich walnut finish. A timeless piece that anchors any living room.",
+    shortDescription: "Classic wood coffee table",
+    price: "KES 18,500",
+    category: "Coffee Tables",
+    image: "/solid-wood-coffee-table-walnut-finish-with-shelf.jpg",
+    features: ["Solid Hardwood", "Walnut Finish", "Lower Shelf", "Classic Design"],
+  },
+  // Coffee Courts (Display/Bar Units)
+  {
+    id: "modern-coffee-court",
+    name: "Modern Coffee Court Unit",
+    description:
+      "Stylish coffee court with built-in storage for all your beverage essentials. Features glass display shelves, wine rack, and enclosed storage. Perfect for entertaining guests in your Kenyan home.",
+    shortDescription: "Coffee bar with storage",
+    price: "KES 42,000",
+    category: "Coffee Courts",
+    image: "/modern-coffee-bar-unit-wine-rack-glass-shelves.jpg",
+    features: ["Glass Shelves", "Wine Rack", "Enclosed Storage", "LED Lighting"],
+  },
+  {
+    id: "classic-coffee-court",
+    name: "Classic Wooden Coffee Court",
+    description:
+      "Traditional coffee court crafted from solid wood with elegant carved details. Multiple compartments for cups, saucers, and coffee accessories. A beautiful focal point for living or dining areas.",
+    shortDescription: "Traditional wooden coffee court",
+    price: "KES 38,000",
+    category: "Coffee Courts",
+    image: "/classic-wooden-coffee-bar-cabinet-carved-tradition.jpg",
+    features: ["Solid Wood", "Carved Details", "Multiple Compartments", "Traditional Style"],
+  },
+  // Side Tables
+  {
+    id: "round-side-table",
+    name: "Round Accent Side Table",
+    description:
+      "Elegant round side table with marble top and gold-finished tripod base. Perfect beside sofas or armchairs. Adds a touch of luxury to any corner of your home.",
+    shortDescription: "Marble accent side table",
+    price: "KES 12,500",
+    category: "Side Tables",
+    image: "/placeholder.svg?height=600&width=600",
+    features: ["Marble Top", "Gold Base", "45cm Diameter", "Tripod Design"],
+  },
+  {
+    id: "nesting-side-tables",
+    name: "Nesting Side Tables Set",
+    description:
+      "Versatile set of three nesting tables that can be used together or separately. Wood tops with metal frames in varying sizes. Perfect for flexible living spaces.",
+    shortDescription: "Set of 3 nesting tables",
+    price: "KES 16,000",
+    category: "Side Tables",
+    image: "/placeholder.svg?height=600&width=600",
+    features: ["Set of 3", "Wood & Metal", "Space-Saving", "Versatile Use"],
+  },
+  // Mirrors
+  {
+    id: "full-length-mirror",
+    name: "Grand Full-Length Mirror",
+    description:
+      "Statement full-length mirror with ornate gold frame. Makes any room feel larger and brighter. Perfect for bedrooms, dressing areas, or entryways in Kenyan homes.",
+    shortDescription: "Ornate full-length mirror",
+    price: "KES 28,000",
+    category: "Mirrors",
+    image: "/placeholder.svg?height=600&width=600",
+    features: ["180cm Height", "Gold Frame", "Beveled Edge", "Wall Mounted"],
+  },
+  {
+    id: "round-wall-mirror",
+    name: "Modern Round Wall Mirror",
+    description:
+      "Minimalist round mirror with slim black metal frame. Creates a focal point while adding depth to your space. Perfect for living rooms, bathrooms, or hallways.",
+    shortDescription: "Minimalist round mirror",
+    price: "KES 15,000",
+    category: "Mirrors",
+    image: "/placeholder.svg?height=600&width=600",
+    features: ["80cm Diameter", "Metal Frame", "Minimalist Design", "Easy Mount"],
+  },
+  {
+    id: "decorative-sunburst-mirror",
+    name: "Sunburst Decorative Mirror",
+    description:
+      "Eye-catching sunburst mirror that serves as both functional mirror and wall art. Gold-finished metal rays create a dramatic effect. A stunning centerpiece for any wall.",
+    shortDescription: "Gold sunburst wall mirror",
+    price: "KES 22,000",
+    category: "Mirrors",
+    image: "/placeholder.svg?height=600&width=600",
+    features: ["90cm Diameter", "Gold Finish", "Sunburst Design", "Statement Piece"],
+  },
+]
+
+export const categories = [
+  "All",
+  "Wooden Beds",
+  "MDF Beds",
+  "Console Tables",
+  "Dining",
+  "Coffee Tables",
+  "Coffee Courts",
+  "Side Tables",
+  "Mirrors",
+]
