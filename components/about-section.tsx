@@ -34,7 +34,7 @@ export function AboutSection() {
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
             }`}
           >
-            <Image src="/furniture-showroom-kenya-beds-dining.jpg" alt="wigomart showroom in Kenya" fill className="object-cover" />
+            <Image src="/table-lights.jpg" alt="wigomart showroom in Kenya" fill className="object-cover" />
           </div>
 
           {/* Content - Updated for wigomart */}

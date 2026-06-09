@@ -128,7 +128,7 @@ export function HeroSection() {
             <div className="absolute -bottom-6 -left-6 bg-background rounded-2xl shadow-xl p-6 max-w-xs">
               <p className="text-sm text-muted-foreground mb-1">Limited Offer</p>
               <p className="text-2xl font-bold text-primary">
-                Up to <span className="text-accent">40% OFF</span>
+                Grab It <span className="text-accent">Before It's Gone</span>
               </p>
             </div>
           </div>

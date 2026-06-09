@@ -47,12 +47,12 @@ export function ProductsGrid() {
     <section id="products" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4 animate-fade-in">
             Our Collection
           </p>
           <h2 className="text-3xl md:text-5xl font-light text-foreground animate-fade-in-up">Curated for You</h2>
-        </div>
+        </div> */}
 
         {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-4 mb-16">

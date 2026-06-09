@@ -13,8 +13,8 @@ const testimonials = [
   {
     quote:
       "The MDF bed I ordered was exactly as shown. Their WhatsApp support helped me choose the right size. Highly recommend wigomart!",
-    author: "James K.",
-    location: "Mombasa",
+    author: "Hassan A.",
+    location: "Nairobi",
   },
   {
     quote:
@@ -24,8 +24,8 @@ const testimonials = [
   },
   {
     quote:
-      "Our 8-seater dining set is perfect for family gatherings. wigomart delivered all the way to Nakuru without any issues.",
-    author: "Peter M.",
+      "Our 6-seater dining set is perfect for family gatherings. The design blends beautifully with our home decor.",
+    author: "Sumaya M.",
     location: "Nakuru",
   },
 ]
